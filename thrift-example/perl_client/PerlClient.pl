@@ -27,10 +27,10 @@ eval{
     my $response = $client->searchByName("Wall");
     print "response: " . Dumper($response);
 
-    print "@$response[0]->{name} \n";
-    print "@$response[0]->{age} \n";
-    print "@$response[0]->{country} \n";
-    print "@$response[0]->{hobby} \n";
+#    print "@$response[0]->{name} \n";
+#    print "@$response[0]->{age} \n";
+#    print "@$response[0]->{country} \n";
+#    print "@$response[0]->{hobby} \n";
 
     $transport->close();
 
