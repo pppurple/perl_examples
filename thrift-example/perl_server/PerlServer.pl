@@ -23,13 +23,13 @@ sub new {
     return bless($self,$classname);
 }
 
-
 sub searchByName{
   my $self = shift;
   my $query = shift;
 
   print "query: $query \n";
 
+  # dummy response.(emulate search by query from DB)
   my $alice = new exampleThrift::Person({name => 'Alice Wall', age => 33, country => exampleThrift::Country::JAPAN, hobby => 'trick'});
   my $bobby = new exampleThrift::Person({name => 'Bobby Wall', age => 29, country => exampleThrift::Country::AMERICA, hobby => 'yo-yo'});
 
