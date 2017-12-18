@@ -16,6 +16,8 @@ use exampleThrift::PeopleService;
 package PeopleServiceHandler;
 use base qw(exampleThrift::PeopleServiceIf);
 
+use Data::Dumper;
+
 sub new {
     my $classname = shift;
     my $self      = {};
@@ -36,6 +38,7 @@ sub searchByName{
   my @people;
   push @people, $alice;
   push @people, $bobby;
+  print Dumper(\@people);
 
   return \@people;
 }
